@@ -28,7 +28,9 @@
 
 .avatar-img {
   width: 250px;
-  padding-top: 5em;
+  height: 250px;
+  margin-top: 8em;
+  border-radius: 50%;
 }
 
 .banner-text {

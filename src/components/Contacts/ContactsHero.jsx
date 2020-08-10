@@ -1,16 +1,13 @@
 import React from "react";
+import avatar from "../../images/hero_logo.jpeg";
+import classes from "./Contacts.module.css";
 
 export const ContactsHero = () => {
   return (
-    <div>
+    <div className={classes.hero_block}>
       <h2>Andrii Tsvirko</h2>
-      <img
-        src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png"
-        alt="avatar"
-        width="250px"
-        height="250px"
-      />
-      <p style={{ width: "75%", margin: "auto", paddingTop: "1em" }}>
+      <img src={avatar} alt="logo" />
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum ut
         totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum
         ut totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod

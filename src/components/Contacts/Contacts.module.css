@@ -1,0 +1,10 @@
+.hero_block img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.hero_block p {
+  width: 75%;
+  margin: auto;
+  padding-top: 1em;
+}

@@ -6,6 +6,9 @@ import classes from "./Header.module.css";
 export const HeaderNav = () => {
   return (
     <Navigation className={classes.nav_links}>
+      <NavLink to="/" activeClassName="active">
+        Home
+      </NavLink>
       <NavLink to="/experience">Experience</NavLink>
       <NavLink to="/aboutme">About Me</NavLink>
       <NavLink to="/projects">Projects</NavLink>
