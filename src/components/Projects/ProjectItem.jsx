@@ -2,24 +2,20 @@ import React from "react";
 import { Card, CardTitle, CardText, CardActions } from "react-mdl";
 import classes from "./Projects.module.css";
 
-export const ProjectReact2 = () => {
+const ProjectItem = (props) => {
   return (
-    <Card>
-      <CardTitle className={classes.title_pic}></CardTitle>
-      <hr />
+    <Card className={classes.card}>
+      <CardTitle className={classes.cardtitle}></CardTitle>
       <CardText className={classes.project_text}>
-        <p>My first project on react. Trained by IT incubator lessons</p>
+        <p>{props.text}</p>
       </CardText>
       <CardActions border className={classes.link}>
-        <a
-          href="https://github.com/djmaluy/my-social"
-          target="_blank"
-          rel="noopener noreferrer"
-          colored
-        >
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
           Link for GitHub
         </a>
       </CardActions>
     </Card>
   );
 };
+
+export default ProjectItem;

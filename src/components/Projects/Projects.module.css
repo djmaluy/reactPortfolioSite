@@ -24,13 +24,7 @@
 .projects {
   display: flex;
   justify-content: space-around;
-  height: 600px;
-}
-
-.Card {
-  border-radius: 10px;
-  min-width: 450px;
-  margin-left: auto;
+  height: 624px;
 }
 
 .cardtitle {
