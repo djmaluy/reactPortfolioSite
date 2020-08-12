@@ -1,6 +1,20 @@
-.nav_links a {
-  text-transform: uppercase;
-  font-weight: bold;
+.item a {
   color: white;
-  font-size: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.item a:hover {
+  color: #d0d0d0;
+  transition: linear 0.2s;
+}
+
+.item a.activeLink {
+  color: gold;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
 }

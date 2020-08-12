@@ -1,10 +1,7 @@
-.hero_block img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+.list_items {
+  margin-left: 450px;
 }
-.hero_block p {
-  width: 75%;
-  margin: auto;
-  padding-top: 1em;
+
+.contacts-body h2 {
+  font-size: 25px;
 }

@@ -1,18 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Navigation } from "react-mdl";
 import classes from "./Header.module.css";
+import { Navigation } from "react-mdl";
 
-export const HeaderNav = () => {
+const HeaderNav = () => {
   return (
-    <Navigation className={classes.nav_links}>
-      <NavLink to="/" activeClassName="active">
-        Home
-      </NavLink>
-      <NavLink to="/experience">Experience</NavLink>
-      <NavLink to="/aboutme">About Me</NavLink>
-      <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/contacts">Contacts</NavLink>
+    <Navigation className={classes.nav}>
+      <div className={` ${classes.item} ${classes.activeLink} `}>
+        <NavLink to="/home" activeClassName={classes.activeLink}>
+          Home
+        </NavLink>
+      </div>
+
+      <div className={classes.item}>
+        <NavLink to="/about" activeClassName={classes.activeLink}>
+          About me
+        </NavLink>
+      </div>
+      <div className={classes.item}>
+        <NavLink to="/projects" activeClassName={classes.activeLink}>
+          Projects
+        </NavLink>
+      </div>
+      <div className={classes.item}>
+        <NavLink to="/contacts" activeClassName={classes.activeLink}>
+          Contacts
+        </NavLink>
+      </div>
     </Navigation>
   );
 };
+
+export default HeaderNav;

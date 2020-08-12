@@ -2,19 +2,20 @@ import React from "react";
 import { Card, CardTitle, CardText, CardActions } from "react-mdl";
 import classes from "./Projects.module.css";
 
-export const ProjectItem1 = () => {
+export const ProjectReact1 = () => {
   return (
     <Card>
-      <CardTitle className={classes.cardtitle}></CardTitle>
+      <CardTitle className={classes.title_pic}></CardTitle>
+      <hr />
       <CardText className={classes.project_text}>
         <p>
-          My first project, ActiveBox, was made up from a layout using HTML/CSS
-          and some JS
+          I wrote this project based on the lessons of one of the bloggers on
+          YouTube
         </p>
       </CardText>
       <CardActions border className={classes.link}>
         <a
-          href="https://github.com/djmaluy/ActiveBox"
+          href="https://github.com/djmaluy/react-site"
           target="_blank"
           rel="noopener noreferrer"
           colored

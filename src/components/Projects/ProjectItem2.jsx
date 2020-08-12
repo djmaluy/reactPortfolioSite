@@ -1,24 +1,26 @@
 import React from "react";
-import { Card, CardTitle, CardText, CardActions, Button } from "react-mdl";
+import { Card, CardTitle, CardText, CardActions } from "react-mdl";
+import classes from "./Projects.module.css";
 
 export const ProjectItem2 = () => {
   return (
-    <Card shadow={0} style={{ minwidth: "450px", margin: "auto" }}>
-      <CardTitle
-        style={{
-          color: "#000",
-          height: "176px",
-          background:
-            "url(https://pomelnikov.com/images/obuchenie/Pomelnikov-htmlcss.jpg) center / cover",
-        }}
-      >
-        Project 2
-      </CardTitle>
-      <CardText>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    <Card>
+      <CardTitle className={classes.cardtitle}></CardTitle>
+      <CardText className={classes.project_text}>
+        <p>
+          Second attempt to make up the site from the layout using bootstrap
+          version 4
+        </p>
       </CardText>
-      <CardActions border>
-        <Button colored>GitHub</Button>
+      <CardActions border className={classes.link}>
+        <a
+          href="https://github.com/djmaluy/tinyone"
+          target="_blank"
+          rel="noopener noreferrer"
+          colored
+        >
+          Link for GitHub
+        </a>
       </CardActions>
     </Card>
   );

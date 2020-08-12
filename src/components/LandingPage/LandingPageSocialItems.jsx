@@ -15,21 +15,21 @@ export const LandingPageSocialItems = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-facebook-square"></i>
+        <i className="fa fa-facebook-square"></i>
       </a>
       <a
         href="mailto:andrii.tsvirko@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-google"></i>
+        <i className="fa fa-google"></i>
       </a>
       <a
         href="https://github.com/djmaluy"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-github-square"></i>
+        <i className="fa fa-github-square"></i>
       </a>
     </div>
   );

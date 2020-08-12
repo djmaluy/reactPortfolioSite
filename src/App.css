@@ -1,17 +1,19 @@
 .header-color {
-  background: #833ab4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fcb045,
-    #fd1d1d,
-    #833ab4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fcb045,
-    #fd1d1d,
-    #833ab4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+}
+
+span.mdl-layout-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.mdl-grid {
+  height: 500%;
+  width: 100%;
+  background: url("https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1")
+    100% 100% no-repeat;
+  background-size: cover;
 }
 
 .landing-grid {
@@ -73,8 +75,15 @@
   padding: 8px;
 }
 
+.social-links i:hover {
+  color: #519872;
+  font-size: 4.5em;
+  padding: 8px;
+}
+
 .projects-grid {
   display: flex;
+  flex-direction: row;
 }
 
 .contact-body {
@@ -108,8 +117,8 @@
 }
 
 .contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
+  border-top: 5px dotted rgb(107, 104, 104);
+  width: 40%;
   margin: auto;
 }
 
