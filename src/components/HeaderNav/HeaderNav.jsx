@@ -7,7 +7,7 @@ const HeaderNav = () => {
   return (
     <Navigation className={classes.nav}>
       <div className={` ${classes.item} ${classes.activeLink} `}>
-        <NavLink to="/home" activeClassName={classes.activeLink}>
+        <NavLink to="/" exact activeClassName={classes.activeLink}>
           Home
         </NavLink>
       </div>
