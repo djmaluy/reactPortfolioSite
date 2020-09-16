@@ -9,7 +9,7 @@ export const Main = () => {
   return (
     <Switch>
       <Route path="/reactPortfolioSite" component={LandingPage} />
-      <Route exact path="/home" component={LandingPage} />
+      <Route exact path="/" component={LandingPage} />
       <Route path="/about" component={AboutMe} />
       <Route path="/contacts" component={Contacts} />
       <Route path="/projects" component={Projects} />
